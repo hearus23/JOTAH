@@ -82,8 +82,14 @@ export default function ContactSection() {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-jotah-light-gray">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+      {/* Background patterns */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-16 left-16 w-32 h-32 border-4 border-jotah-gold rounded-2xl rotate-12 animate-spin-slow"></div>
+        <div className="absolute bottom-16 right-16 w-24 h-24 bg-purple-400 rounded-full animate-float"></div>
+        <div className="absolute top-1/2 right-1/4 w-16 h-16 bg-blue-400 transform rotate-45 animate-bounce"></div>
+      </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
             <h2 className="text-4xl md:text-5xl font-playfair font-bold text-jotah-dark mb-6">

@@ -1,5 +1,4 @@
 import { Sprout, Settings, Heart } from "lucide-react";
-import aboutBackgroundImage from "@assets/WhatsApp Image 2025-08-07 at 20.29.21_1754991031143.jpeg";
 
 export default function AboutSection() {
   const features = [
@@ -21,13 +20,13 @@ export default function AboutSection() {
   ];
 
   return (
-    <section id="about" className="py-20 bg-white relative overflow-hidden">
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-5"
-        style={{
-          backgroundImage: `url(${aboutBackgroundImage})`,
-        }}
-      ></div>
+    <section id="about" className="py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+      {/* Clean geometric patterns */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-20 right-20 w-40 h-40 border-4 border-jotah-gold rounded-full animate-spin-slow"></div>
+        <div className="absolute bottom-20 left-20 w-28 h-28 bg-green-400 rounded-2xl rotate-45 animate-float"></div>
+        <div className="absolute top-1/3 left-1/2 w-12 h-12 bg-purple-400 rounded-full animate-bounce delay-1000"></div>
+      </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-playfair font-bold text-jotah-dark mb-4">

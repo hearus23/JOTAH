@@ -1,5 +1,4 @@
 import { ChevronDown } from "lucide-react";
-import heroBackgroundImage from "@assets/WhatsApp Image 2025-08-07 at 20.29.16_1754991031139.jpeg";
 
 export default function HeroSection() {
   const scrollToProducts = () => {
@@ -17,21 +16,31 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-50 via-white to-gray-50">
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url(${heroBackgroundImage})`,
-        }}
-      ></div>
-      <div className="absolute inset-0 bg-gradient-to-br from-black/30 via-black/20 to-black/40"></div>
-      <div className="absolute inset-0 bg-gradient-to-t from-white/90 via-white/60 to-transparent"></div>
-      
-      {/* Animated background elements */}
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-800">
+      {/* Dynamic geometric patterns */}
       <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-20 left-20 w-32 h-32 bg-jotah-gold rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-40 right-20 w-40 h-40 bg-green-400 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-blue-400 rounded-full blur-2xl animate-pulse delay-2000"></div>
+        <div className="absolute top-0 left-0 w-full h-full">
+          <div className="absolute top-20 left-20 w-40 h-40 bg-jotah-gold rounded-full animate-pulse"></div>
+          <div className="absolute top-40 right-32 w-24 h-24 bg-blue-400 rounded-full animate-bounce delay-1000"></div>
+          <div className="absolute bottom-32 left-1/4 w-32 h-32 bg-green-400 rounded-full animate-pulse delay-2000"></div>
+          <div className="absolute bottom-20 right-20 w-56 h-56 bg-purple-400 rounded-full animate-bounce delay-500"></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-pink-400 rounded-full animate-pulse delay-1500"></div>
+        </div>
+      </div>
+      
+      {/* Geometric shapes */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-16 right-16 w-16 h-16 border-4 border-jotah-gold rotate-45 animate-spin-slow"></div>
+        <div className="absolute bottom-16 left-16 w-12 h-12 border-4 border-blue-400 rotate-12 animate-pulse"></div>
+        <div className="absolute top-1/3 left-1/4 w-8 h-8 bg-green-400 transform rotate-45 animate-bounce"></div>
+      </div>
+      
+      {/* Wave pattern at bottom */}
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden">
+        <svg className="relative block w-full h-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" 
+                fill="rgba(255,255,255,0.8)"></path>
+        </svg>
       </div>
       
       <div className="relative z-10 text-center max-w-6xl mx-auto px-6">

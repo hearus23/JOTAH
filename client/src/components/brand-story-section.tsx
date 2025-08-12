@@ -1,16 +1,15 @@
 import { Leaf, Award, Flame } from "lucide-react";
 import brandImage from "@assets/WhatsApp Image 2025-08-07 at 20.29.16_1754985828768.jpeg";
-import sectionBackgroundImage from "@assets/WhatsApp Image 2025-08-07 at 20.29.17 (1)_1754991031140.jpeg";
 
 export default function BrandStorySection() {
   return (
-    <section className="py-20 bg-white relative overflow-hidden">
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-5"
-        style={{
-          backgroundImage: `url(${sectionBackgroundImage})`,
-        }}
-      ></div>
+    <section className="py-20 bg-gradient-to-br from-white to-gray-50 relative overflow-hidden">
+      {/* Modern geometric background */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-10 left-10 w-32 h-32 bg-jotah-gold rounded-3xl rotate-12 animate-float"></div>
+        <div className="absolute bottom-10 right-10 w-24 h-24 bg-green-400 rounded-full animate-pulse"></div>
+        <div className="absolute top-1/2 left-1/3 w-16 h-16 bg-blue-400 transform rotate-45 animate-bounce"></div>
+      </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
