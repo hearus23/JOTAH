@@ -27,6 +27,7 @@ export default function Navigation() {
             <div className="ml-10 flex items-baseline space-x-8">
               <button onClick={() => scrollToSection('home')} className="text-white hover:text-jotah-gold transition-colors duration-300">Home</button>
               <button onClick={() => scrollToSection('products')} className="text-white hover:text-jotah-gold transition-colors duration-300">Products</button>
+              <button onClick={() => scrollToSection('what-the-fun')} className="text-white hover:text-jotah-gold transition-colors duration-300">What the Fun</button>
               <button onClick={() => scrollToSection('about')} className="text-white hover:text-jotah-gold transition-colors duration-300">About</button>
               <button onClick={() => scrollToSection('contact')} className="text-white hover:text-jotah-gold transition-colors duration-300">Contact</button>
             </div>
@@ -51,6 +52,7 @@ export default function Navigation() {
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-jotah-dark">
             <button onClick={() => scrollToSection('home')} className="block px-3 py-2 text-white hover:text-jotah-gold w-full text-left">Home</button>
             <button onClick={() => scrollToSection('products')} className="block px-3 py-2 text-white hover:text-jotah-gold w-full text-left">Products</button>
+            <button onClick={() => scrollToSection('what-the-fun')} className="block px-3 py-2 text-white hover:text-jotah-gold w-full text-left">What the Fun</button>
             <button onClick={() => scrollToSection('about')} className="block px-3 py-2 text-white hover:text-jotah-gold w-full text-left">About</button>
             <button onClick={() => scrollToSection('contact')} className="block px-3 py-2 text-white hover:text-jotah-gold w-full text-left">Contact</button>
           </div>
