@@ -1,3 +1,8 @@
+import productImage1 from "@assets/WhatsApp Image 2025-08-07 at 20.29.16_1754986658170.jpeg";
+import productImage2 from "@assets/WhatsApp Image 2025-08-07 at 20.29.17 (1)_1754986658171.jpeg";
+import productImage3 from "@assets/WhatsApp Image 2025-08-07 at 20.29.17_1754986658171.jpeg";
+import productImage4 from "@assets/WhatsApp Image 2025-08-07 at 20.29.21_1754986658172.jpeg";
+
 export default function ProductsSection() {
   const products = [
     {
@@ -5,21 +10,28 @@ export default function ProductsSection() {
       name: "Classic Premium",
       description: "Ultra-thin, slow-burning papers crafted from the finest natural fibers.",
       price: "$12.99",
-      image: "https://images.unsplash.com/photo-1579952363873-27d3bfad9c0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400"
+      image: productImage1
     },
     {
       id: 2,
       name: "Gold Edition",
       description: "Limited edition papers with gold accents for the ultimate luxury experience.",
       price: "$24.99",
-      image: "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400"
+      image: productImage2
     },
     {
       id: 3,
       name: "Organic Natural",
       description: "100% organic hemp papers for the purest, most natural smoking experience.",
       price: "$16.99",
-      image: "https://images.unsplash.com/photo-1564594985645-4427056e22e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400"
+      image: productImage3
+    },
+    {
+      id: 4,
+      name: "Premium Collection",
+      description: "Our finest collection featuring premium materials and exceptional craftsmanship.",
+      price: "$19.99",
+      image: productImage4
     }
   ];
 
@@ -40,7 +52,7 @@ export default function ProductsSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {products.map((product) => (
             <div key={product.id} className="bg-jotah-charcoal rounded-xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-300 group">
               <img 

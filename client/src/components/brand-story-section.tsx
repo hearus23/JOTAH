@@ -1,4 +1,5 @@
 import { Leaf, Award, Flame } from "lucide-react";
+import brandImage from "@assets/WhatsApp Image 2025-08-07 at 20.29.16_1754985828768.jpeg";
 
 export default function BrandStorySection() {
   return (
@@ -32,9 +33,9 @@ export default function BrandStorySection() {
           </div>
           <div className="relative">
             <img 
-              src="https://images.unsplash.com/photo-1593720213428-28a5b9e94613?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-              alt="Crafting Premium Papers" 
-              className="rounded-2xl shadow-2xl w-full" 
+              src={brandImage} 
+              alt="JOTAH Premium Rolling Papers" 
+              className="rounded-2xl shadow-2xl w-full object-cover h-96" 
             />
             <div className="absolute inset-0 bg-gradient-to-tr from-jotah-gold/20 to-transparent rounded-2xl"></div>
           </div>
