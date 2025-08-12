@@ -34,20 +34,20 @@ export default function TestimonialsSection() {
   );
 
   return (
-    <section className="py-20 bg-jotah-dark">
+    <section className="py-20 bg-jotah-light-gray">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-jotah-dark mb-4">
             What Our <span className="text-jotah-gold">Customers</span> Say
           </h2>
-          <p className="text-xl text-gray-400">Experience speaks louder than words</p>
+          <p className="text-xl text-gray-600">Experience speaks louder than words</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial) => (
-            <div key={testimonial.id} className="bg-jotah-charcoal p-8 rounded-xl shadow-xl">
+            <div key={testimonial.id} className="bg-white p-8 rounded-xl shadow-lg border border-jotah-charcoal">
               <StarRating />
-              <p className="text-gray-300 mb-6 italic">
+              <p className="text-gray-600 mb-6 italic">
                 "{testimonial.content}"
               </p>
               <div className="flex items-center">
@@ -57,7 +57,7 @@ export default function TestimonialsSection() {
                   className="w-12 h-12 rounded-full mr-4" 
                 />
                 <div>
-                  <h4 className="text-white font-semibold">{testimonial.name}</h4>
+                  <h4 className="text-jotah-dark font-semibold">{testimonial.name}</h4>
                   <p className="text-gray-500 text-sm">{testimonial.location}</p>
                 </div>
               </div>

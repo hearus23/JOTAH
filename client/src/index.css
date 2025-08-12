@@ -52,12 +52,14 @@
   --tracking-normal: 0em;
   --spacing: 0.25rem;
   
-  /* Jotah Brand Colors */
+  /* Jotah Brand Colors - Light Theme */
   --jotah-gold: hsl(51, 62%, 52%);
   --jotah-green: hsl(145, 24%, 39%);
   --jotah-dark: hsl(0, 0%, 10%);
-  --jotah-charcoal: hsl(0, 0%, 16%);
-  --jotah-deep: hsl(0, 0%, 6%);
+  --jotah-charcoal: hsl(0, 0%, 90%);
+  --jotah-deep: hsl(0, 0%, 98%);
+  --jotah-light-gray: hsl(0, 0%, 95%);
+  --jotah-medium-gray: hsl(0, 0%, 85%);
 }
 
 .dark {
@@ -113,7 +115,7 @@
   }
 
   body {
-    @apply font-sans antialiased bg-jotah-deep text-white;
+    @apply font-sans antialiased bg-jotah-deep text-jotah-dark;
   }
 }
 

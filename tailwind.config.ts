@@ -66,6 +66,8 @@ export default {
         "jotah-dark": "var(--jotah-dark)",
         "jotah-charcoal": "var(--jotah-charcoal)",
         "jotah-deep": "var(--jotah-deep)",
+        "jotah-light-gray": "var(--jotah-light-gray)",
+        "jotah-medium-gray": "var(--jotah-medium-gray)",
       },
       fontFamily: {
         sans: ["var(--font-sans)"],

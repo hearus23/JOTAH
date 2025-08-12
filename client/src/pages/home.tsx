@@ -10,7 +10,7 @@ import Footer from "@/components/footer";
 
 export default function Home() {
   return (
-    <div className="bg-jotah-deep text-white font-inter">
+    <div className="bg-jotah-deep text-jotah-dark font-inter">
       <Navigation />
       <HeroSection />
       <ProductsSection />

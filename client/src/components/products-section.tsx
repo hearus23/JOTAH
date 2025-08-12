@@ -41,28 +41,28 @@ export default function ProductsSection() {
   };
 
   return (
-    <section id="products" className="py-20 bg-jotah-dark">
+    <section id="products" className="py-20 bg-jotah-light-gray">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-jotah-dark mb-4">
             Our <span className="text-jotah-gold">Premium</span> Collection
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Discover our carefully curated selection of premium rolling papers, each designed to enhance your experience with unparalleled quality and craftsmanship.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {products.map((product) => (
-            <div key={product.id} className="bg-jotah-charcoal rounded-xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-300 group">
+            <div key={product.id} className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group border border-jotah-charcoal">
               <img 
                 src={product.image} 
                 alt={product.name} 
                 className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" 
               />
               <div className="p-6">
-                <h3 className="text-2xl font-playfair font-semibold text-white mb-2">{product.name}</h3>
-                <p className="text-gray-400 mb-4">{product.description}</p>
+                <h3 className="text-2xl font-playfair font-semibold text-jotah-dark mb-2">{product.name}</h3>
+                <p className="text-gray-600 mb-4">{product.description}</p>
                 <div className="flex justify-between items-center">
                   <span className="text-jotah-gold text-xl font-semibold">{product.price}</span>
                   <button 

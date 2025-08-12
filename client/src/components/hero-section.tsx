@@ -1,4 +1,5 @@
 import { ChevronDown } from "lucide-react";
+import heroBackgroundImage from "@assets/WhatsApp Image 2025-08-07 at 20.29.16_1754991031139.jpeg";
 
 export default function HeroSection() {
   const scrollToProducts = () => {
@@ -17,15 +18,21 @@ export default function HeroSection() {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-jotah-deep via-jotah-dark to-jotah-charcoal"></div>
-      <div className="absolute inset-0 bg-black/40"></div>
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url(${heroBackgroundImage})`,
+        }}
+      ></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-white/80 via-white/70 to-white/60"></div>
+      <div className="absolute inset-0 bg-jotah-deep/10"></div>
       
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
-        <h1 className="text-5xl md:text-7xl font-playfair font-bold text-white mb-6">
+        <h1 className="text-5xl md:text-7xl font-playfair font-bold text-jotah-dark mb-6">
           <span className="text-jotah-gold">JOTAH</span><br />
           Premium Rolling Papers
         </h1>
-        <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
           Crafted for connoisseurs who demand excellence. Experience the finest quality rolling papers designed for the perfect session.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

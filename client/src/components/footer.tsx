@@ -31,12 +31,12 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-jotah-deep border-t border-jotah-charcoal py-12">
+    <footer className="bg-jotah-dark border-t border-jotah-charcoal py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
             <div className="text-3xl font-playfair font-bold text-jotah-gold mb-4">JOTAH</div>
-            <p className="text-gray-400 mb-6 max-w-md">
+            <p className="text-gray-300 mb-6 max-w-md">
               Premium rolling papers crafted for connoisseurs who demand excellence. Experience the difference quality makes.
             </p>
             <div className="flex space-x-4">
@@ -44,7 +44,7 @@ export default function Footer() {
                 <a 
                   key={index}
                   href={social.href} 
-                  className="text-gray-400 hover:text-jotah-gold transition-colors duration-300"
+                  className="text-gray-300 hover:text-jotah-gold transition-colors duration-300"
                 >
                   <social.icon className="w-6 h-6" />
                 </a>
@@ -59,7 +59,7 @@ export default function Footer() {
                 <li key={index}>
                   <button 
                     onClick={() => scrollToSection(link.section)}
-                    className="text-gray-400 hover:text-jotah-gold transition-colors duration-300"
+                    className="text-gray-300 hover:text-jotah-gold transition-colors duration-300"
                   >
                     {link.name}
                   </button>

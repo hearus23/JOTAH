@@ -2,13 +2,13 @@ import qrCodeImage from "@assets/frame_1754986501435.png";
 
 export default function WhatTheFunSection() {
   return (
-    <section id="what-the-fun" className="py-20 bg-jotah-charcoal">
+    <section id="what-the-fun" className="py-20 bg-jotah-medium-gray">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-jotah-dark mb-4">
             What the <span className="text-jotah-gold">Fun</span>
           </h2>
-          <p className="text-xl text-gray-400 mb-12 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
             Scan the QR code below to discover something special from JOTAH
           </p>
           
