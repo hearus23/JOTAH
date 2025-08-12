@@ -82,20 +82,20 @@ export default function ContactSection() {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
-      {/* Background patterns */}
-      <div className="absolute inset-0 opacity-5">
+    <section id="contact" className="py-20 bg-gradient-to-br from-gray-800 to-gray-900 relative overflow-hidden">
+      {/* Dark background patterns */}
+      <div className="absolute inset-0 opacity-10">
         <div className="absolute top-16 left-16 w-32 h-32 border-4 border-jotah-gold rounded-2xl rotate-12 animate-spin-slow"></div>
-        <div className="absolute bottom-16 right-16 w-24 h-24 bg-purple-400 rounded-full animate-float"></div>
-        <div className="absolute top-1/2 right-1/4 w-16 h-16 bg-blue-400 transform rotate-45 animate-bounce"></div>
+        <div className="absolute bottom-16 right-16 w-24 h-24 bg-gray-700 rounded-full animate-float"></div>
+        <div className="absolute top-1/2 right-1/4 w-16 h-16 bg-gray-600 transform rotate-45 animate-bounce"></div>
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
-            <h2 className="text-4xl md:text-5xl font-playfair font-bold text-jotah-dark mb-6">
+            <h2 className="text-4xl md:text-5xl font-playfair font-bold text-white mb-6">
               Get in <span className="text-jotah-gold">Touch</span>
             </h2>
-            <p className="text-xl text-gray-600 mb-8">
+            <p className="text-xl text-gray-300 mb-8">
               JOTAH ke baare mein koi questions hai ya retailer banna hai? Hum aapko sunne ke liye excited hai!
             </p>
 
@@ -106,21 +106,21 @@ export default function ContactSection() {
                     <item.icon className="text-jotah-dark" />
                   </div>
                   <div>
-                    <h4 className="text-jotah-dark font-semibold">{item.title}</h4>
-                    <p className="text-gray-600">{item.content}</p>
+                    <h4 className="text-white font-semibold">{item.title}</h4>
+                    <p className="text-gray-300">{item.content}</p>
                   </div>
                 </div>
               ))}
             </div>
 
             <div className="mt-8">
-              <h4 className="text-jotah-dark font-semibold mb-4">Follow Us</h4>
+              <h4 className="text-white font-semibold mb-4">Follow Us</h4>
               <div className="flex space-x-4">
                 {socialLinks.map((social, index) => (
                   <a 
                     key={index}
                     href={social.href} 
-                    className="w-10 h-10 bg-jotah-medium-gray rounded-full flex items-center justify-center hover:bg-jotah-gold hover:text-jotah-dark transition-colors duration-300"
+                    className="w-10 h-10 bg-gray-600 rounded-full flex items-center justify-center hover:bg-jotah-gold hover:text-jotah-dark transition-colors duration-300"
                   >
                     <social.icon className="w-5 h-5" />
                   </a>
@@ -129,8 +129,8 @@ export default function ContactSection() {
             </div>
           </div>
 
-          <div className="bg-white p-8 rounded-xl shadow-lg border border-jotah-charcoal">
-            <h3 className="text-2xl font-playfair font-semibold text-jotah-dark mb-6">Send us a Message</h3>
+          <div className="bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-700">
+            <h3 className="text-2xl font-playfair font-semibold text-white mb-6">Send us a Message</h3>
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                 <FormField
@@ -138,12 +138,12 @@ export default function ContactSection() {
                   name="name"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-jotah-dark font-medium">Name</FormLabel>
+                      <FormLabel className="text-white font-medium">Name</FormLabel>
                       <FormControl>
                         <Input 
                           {...field} 
                           placeholder="Your Name"
-                          className="bg-white border-gray-300 text-jotah-dark focus:border-jotah-gold"
+                          className="bg-gray-700 border-gray-600 text-white focus:border-jotah-gold"
                         />
                       </FormControl>
                       <FormMessage />
@@ -156,13 +156,13 @@ export default function ContactSection() {
                   name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-jotah-dark font-medium">Email</FormLabel>
+                      <FormLabel className="text-white font-medium">Email</FormLabel>
                       <FormControl>
                         <Input 
                           {...field} 
                           type="email"
                           placeholder="your@email.com"
-                          className="bg-white border-gray-300 text-jotah-dark focus:border-jotah-gold"
+                          className="bg-gray-700 border-gray-600 text-white focus:border-jotah-gold"
                         />
                       </FormControl>
                       <FormMessage />
@@ -175,12 +175,12 @@ export default function ContactSection() {
                   name="subject"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-jotah-dark font-medium">Subject</FormLabel>
+                      <FormLabel className="text-white font-medium">Subject</FormLabel>
                       <FormControl>
                         <Input 
                           {...field} 
                           placeholder="How can we help?"
-                          className="bg-white border-gray-300 text-jotah-dark focus:border-jotah-gold"
+                          className="bg-gray-700 border-gray-600 text-white focus:border-jotah-gold"
                         />
                       </FormControl>
                       <FormMessage />
@@ -193,13 +193,13 @@ export default function ContactSection() {
                   name="message"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-jotah-dark font-medium">Message</FormLabel>
+                      <FormLabel className="text-white font-medium">Message</FormLabel>
                       <FormControl>
                         <Textarea 
                           {...field} 
                           rows={5}
                           placeholder="Tell us more about your inquiry..."
-                          className="bg-white border-gray-300 text-jotah-dark focus:border-jotah-gold resize-none"
+                          className="bg-gray-700 border-gray-600 text-white focus:border-jotah-gold resize-none"
                         />
                       </FormControl>
                       <FormMessage />

@@ -55,27 +55,27 @@ export default function TestimonialsSection() {
   );
 
   return (
-    <section className="py-20 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 relative overflow-hidden">
-      {/* Modern background elements */}
-      <div className="absolute inset-0 opacity-5">
+    <section className="py-20 bg-gradient-to-br from-gray-800 to-gray-900 relative overflow-hidden">
+      {/* Dark background elements */}
+      <div className="absolute inset-0 opacity-10">
         <div className="absolute top-10 left-1/4 w-36 h-36 bg-jotah-gold rounded-full animate-pulse"></div>
-        <div className="absolute bottom-10 right-1/4 w-28 h-28 bg-purple-400 rounded-2xl rotate-45 animate-float"></div>
-        <div className="absolute top-1/2 left-10 w-20 h-20 bg-blue-400 rounded-full animate-bounce-slow"></div>
-        <div className="absolute top-20 right-10 w-16 h-16 border-4 border-green-400 rounded-full animate-spin-slow"></div>
+        <div className="absolute bottom-10 right-1/4 w-28 h-28 bg-gray-700 rounded-2xl rotate-45 animate-float"></div>
+        <div className="absolute top-1/2 left-10 w-20 h-20 bg-gray-600 rounded-full animate-bounce-slow"></div>
+        <div className="absolute top-20 right-10 w-16 h-16 border-4 border-gray-500 rounded-full animate-spin-slow"></div>
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-jotah-dark mb-4">
+          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-white mb-4">
             What Our <span className="text-jotah-gold">Customers</span> Say
           </h2>
-          <p className="text-xl text-gray-600">Experience speaks louder than words</p>
+          <p className="text-xl text-gray-300">Experience speaks louder than words</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {testimonials.map((testimonial) => (
-            <div key={testimonial.id} className="bg-white p-6 rounded-2xl shadow-xl border border-gray-100 hover:shadow-2xl hover:transform hover:scale-105 transition-all duration-300">
+            <div key={testimonial.id} className="bg-gray-800 p-6 rounded-2xl shadow-xl border border-gray-700 hover:shadow-2xl hover:transform hover:scale-105 transition-all duration-300">
               <StarRating />
-              <p className="text-gray-700 mb-6 italic font-medium leading-relaxed">
+              <p className="text-gray-300 mb-6 italic font-medium leading-relaxed">
                 "{testimonial.content}"
               </p>
               <div className="flex items-center">
@@ -85,7 +85,7 @@ export default function TestimonialsSection() {
                   className="w-14 h-14 rounded-full mr-4 border-2 border-jotah-gold" 
                 />
                 <div>
-                  <h4 className="text-jotah-dark font-bold text-lg">{testimonial.name}</h4>
+                  <h4 className="text-white font-bold text-lg">{testimonial.name}</h4>
                   <p className="text-jotah-gold text-sm font-semibold">{testimonial.location}</p>
                 </div>
               </div>
