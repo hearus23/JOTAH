@@ -49,19 +49,19 @@ export default function ProductsSection() {
   };
 
   return (
-    <section id="products" className="py-20 bg-gradient-to-br from-gray-800 to-gray-900 relative overflow-hidden">
-      {/* Dark background decoration */}
-      <div className="absolute inset-0 opacity-10">
+    <section id="products" className="py-20 bg-gradient-to-br from-slate-100 to-white relative overflow-hidden">
+      {/* Light theme decoration */}
+      <div className="absolute inset-0 opacity-5">
         <div className="absolute top-10 left-10 w-64 h-64 bg-jotah-gold rounded-full blur-3xl"></div>
-        <div className="absolute bottom-10 right-10 w-48 h-48 bg-gray-700 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-10 right-10 w-48 h-48 bg-amber-200 rounded-full blur-3xl"></div>
       </div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-6xl font-playfair font-black text-white mb-6">
+          <h2 className="text-4xl md:text-6xl font-playfair font-black text-slate-900 mb-6">
             Our <span className="gradient-text">Premium</span> Collection
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
             🔥 Discover hamare carefully curated selection of premium rolling papers! 
             Har product authentic quality aur best experience ke liye designed hai.
           </p>
@@ -69,7 +69,7 @@ export default function ProductsSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {products.map((product) => (
-            <div key={product.id} className="bg-gray-800 rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 group border border-gray-700 relative">
+            <div key={product.id} className="bg-white rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 group border border-slate-200 relative">
               {/* Badge */}
               <div className="absolute top-4 left-4 z-10">
                 <span className="bg-jotah-gold text-black px-3 py-1 rounded-full text-sm font-bold shadow-lg">
@@ -87,13 +87,13 @@ export default function ProductsSection() {
               </div>
               
               <div className="p-6">
-                <h3 className="text-2xl font-playfair font-bold text-white mb-3">{product.name}</h3>
-                <p className="text-gray-300 mb-6 leading-relaxed">{product.description}</p>
+                <h3 className="text-2xl font-playfair font-bold text-slate-900 mb-3">{product.name}</h3>
+                <p className="text-slate-600 mb-6 leading-relaxed">{product.description}</p>
                 
                 <div className="flex justify-between items-center mb-4">
                   <div className="flex items-center gap-2">
                     <span className="text-2xl font-black text-jotah-gold">{product.price}</span>
-                    <span className="text-sm text-gray-400 line-through">{product.originalPrice}</span>
+                    <span className="text-sm text-slate-500 line-through">{product.originalPrice}</span>
                   </div>
                   <div className="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-bold">
                     Save ₹{parseInt(product.originalPrice.slice(1)) - parseInt(product.price.slice(1))}
@@ -113,7 +113,7 @@ export default function ProductsSection() {
 
         <div className="text-center mt-16">
           <div className="inline-block p-1 bg-gradient-to-r from-jotah-gold to-yellow-500 rounded-full">
-            <button className="bg-gray-800 text-white px-10 py-4 rounded-full font-bold text-xl hover:bg-gray-700 transition-all duration-300">
+            <button className="bg-slate-900 text-white px-10 py-4 rounded-full font-bold text-xl hover:bg-slate-700 transition-all duration-300">
               🔥 View All Products
             </button>
           </div>
