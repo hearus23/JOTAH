@@ -52,14 +52,62 @@
   --tracking-normal: 0em;
   --spacing: 0.25rem;
   
-  /* Jotah Brand Colors - Light Theme */
-  --jotah-gold: hsl(51, 62%, 52%);
+  /* Jotah Brand Colors - Modern Theme */
+  --jotah-gold: hsl(45, 86%, 58%);
   --jotah-green: hsl(145, 24%, 39%);
-  --jotah-dark: hsl(0, 0%, 10%);
+  --jotah-dark: hsl(0, 0%, 5%);
   --jotah-charcoal: hsl(0, 0%, 90%);
   --jotah-deep: hsl(0, 0%, 98%);
-  --jotah-light-gray: hsl(0, 0%, 95%);
+  --jotah-light-gray: hsl(210, 20%, 98%);
   --jotah-medium-gray: hsl(0, 0%, 85%);
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(255, 215, 0, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(255, 215, 0, 0.6); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+/* Modern gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #ffd700, #ffed4e, #fbbf24);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glassmorphism effect */
+.glass {
+  backdrop-filter: blur(16px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Smooth transitions */
+* {
+  scroll-behavior: smooth;
 }
 
 .dark {

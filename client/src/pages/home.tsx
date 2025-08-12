@@ -6,7 +6,7 @@ import TestimonialsSection from "@/components/testimonials-section";
 import WhatTheFunSection from "@/components/what-the-fun-section";
 import AboutSection from "@/components/about-section";
 import ContactSection from "@/components/contact-section";
-import Footer from "@/components/footer";
+import FooterSection from "@/components/footer-section";
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
       <WhatTheFunSection />
       <AboutSection />
       <ContactSection />
-      <Footer />
+      <FooterSection />
     </div>
   );
 }

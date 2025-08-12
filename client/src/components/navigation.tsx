@@ -13,23 +13,23 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-jotah-charcoal shadow-sm">
+    <nav className="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-lg border-b border-white/20 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-18">
           <div className="flex items-center">
-            <div className="text-2xl font-playfair font-bold text-jotah-gold cursor-pointer" onClick={() => scrollToSection('home')}>
+            <div className="text-3xl font-playfair font-black text-transparent bg-clip-text bg-gradient-to-r from-jotah-gold to-yellow-500 cursor-pointer animate-glow" onClick={() => scrollToSection('home')}>
               JOTAH
             </div>
           </div>
           
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
-              <button onClick={() => scrollToSection('home')} className="text-jotah-dark hover:text-jotah-gold transition-colors duration-300">Home</button>
-              <button onClick={() => scrollToSection('products')} className="text-jotah-dark hover:text-jotah-gold transition-colors duration-300">Products</button>
-              <button onClick={() => scrollToSection('what-the-fun')} className="text-jotah-dark hover:text-jotah-gold transition-colors duration-300">What the Fun</button>
-              <button onClick={() => scrollToSection('about')} className="text-jotah-dark hover:text-jotah-gold transition-colors duration-300">About</button>
-              <button onClick={() => scrollToSection('contact')} className="text-jotah-dark hover:text-jotah-gold transition-colors duration-300">Contact</button>
+            <div className="ml-10 flex items-center space-x-8">
+              <button onClick={() => scrollToSection('home')} className="text-jotah-dark hover:text-jotah-gold transition-all duration-300 font-semibold text-lg hover:scale-105">Home</button>
+              <button onClick={() => scrollToSection('products')} className="text-jotah-dark hover:text-jotah-gold transition-all duration-300 font-semibold text-lg hover:scale-105">Products</button>
+              <button onClick={() => scrollToSection('what-the-fun')} className="text-jotah-dark hover:text-jotah-gold transition-all duration-300 font-semibold text-lg hover:scale-105">What the Fun</button>
+              <button onClick={() => scrollToSection('about')} className="text-jotah-dark hover:text-jotah-gold transition-all duration-300 font-semibold text-lg hover:scale-105">About</button>
+              <button onClick={() => scrollToSection('contact')} className="bg-gradient-to-r from-jotah-gold to-yellow-500 text-black px-6 py-2 rounded-full font-bold hover:from-yellow-500 hover:to-jotah-gold transition-all duration-300 hover:scale-105 shadow-lg">Contact</button>
             </div>
           </div>
 

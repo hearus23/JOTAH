@@ -61,12 +61,12 @@ export default function ContactSection() {
     {
       icon: MapPin,
       title: "Address",
-      content: "123 Premium Avenue, Los Angeles, CA 90210"
+      content: "Mumbai, Maharashtra, India 400001"
     },
     {
       icon: Phone,
       title: "Phone",
-      content: "+1 (555) 123-4567"
+      content: "+91 9876543210"
     },
     {
       icon: Mail,
@@ -90,7 +90,7 @@ export default function ContactSection() {
               Get in <span className="text-jotah-gold">Touch</span>
             </h2>
             <p className="text-xl text-gray-600 mb-8">
-              Have questions about our products or want to become a retailer? We'd love to hear from you.
+              JOTAH ke baare mein koi questions hai ya retailer banna hai? Hum aapko sunne ke liye excited hai!
             </p>
 
             <div className="space-y-6">
